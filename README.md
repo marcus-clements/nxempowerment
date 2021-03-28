@@ -53,6 +53,10 @@ Copy .env.example and edit the values to suit your environment.
 
 See `scripts/test_grid_worlds.py` for an example.
 
+To plot a couple of example graphs with empowerment:
+
+`PYTHONPATH=. python scripts/plot_grid_worlds.py`
+
 ## TESTS ##
 
 In the root of the repo
