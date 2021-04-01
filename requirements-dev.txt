@@ -1,1 +1,2 @@
+jupyterlab==3.0.12
 pytest==6.2.2

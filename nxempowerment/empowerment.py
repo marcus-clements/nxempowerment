@@ -19,9 +19,9 @@ def succ(graph: nx.Graph, node: tuple, seen: set, step: int, max_steps: int) -> 
 
 
 def node_empowerment(graph: nx.Graph, node: tuple, num_steps: int) -> Tuple[set, float]:
-    successors = set()
+    successors = {node}
     succ(graph, node, successors, 0, num_steps)
-    return logzero(len(successors))
+    return logzero(max(len(successors) - 1, 0))
 
 
 def graph_node_empowerment(graph: nx.Graph, num_steps: int) -> dict:
