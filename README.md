@@ -43,6 +43,8 @@ Copy .env.example and edit the values to suit your environment.
 
 ## USAGE ##
 
+Please see the Basic_Example Jupyter notebook in `notebooks`
+
 1. Create an empty DiGraph in Network X 
 2. Assign the set of possible actions as a graph attribute
 3. Add nodes and edges. The edges must be labeled with an action.
