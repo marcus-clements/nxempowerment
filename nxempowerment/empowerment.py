@@ -18,7 +18,7 @@ def succ(graph: nx.Graph, node: tuple, seen: set, step: int, max_steps: int) -> 
             succ(graph, n, seen, step, max_steps)
 
 
-def node_empowerment(graph: nx.Graph, node: tuple, num_steps: int) -> Tuple[set, float]:
+def node_empowerment(graph: nx.Graph, node: tuple, num_steps: int) -> float:
     # Include the start node so it is not visited by the recursion
     successors = {node}
     succ(graph, node, successors, 0, num_steps)
